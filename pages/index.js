@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -13,42 +12,36 @@ export default function Home() {
         <h1 className="title">
           kayladesign
         </h1>
-        <p className="description">Because A Picture Is Worth A Thousand Words</p>
+        <p className="description">
+          publications | illustrations | graphics | digital printing
+        </p>
+        <p className="description">⚠️ Our site is currently under construction. ⚠️ </p>
         <img className="main-logo" src="/images/logo.png" />
 
-        {/* <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p> */}
-        <p className="description">Contact us for your design and printing needs</p>
-
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
+          <a href="https://kayladesign1.wixsite.com/kayladesign/about" className="card">
             <h3>Our Story &rarr;</h3>
-            <p>We are a family-owned and operated business. Learn more about us.</p>
-            {/* <p>Find in-depth information about Next.js features and API.</p> */}
+            <p>We are a family-owned and operated business.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Services &rarr;</h3>
+          <a href="https://kayladesign1.wixsite.com/kayladesign/new-page" className="card">
+            <h3>Our Services &rarr;</h3>
             <p>Learn about what we can do for you.</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://www.instagram.com/thehawaiikid/"
             className="card"
           >
-            <h3>Portfolio &rarr;</h3>
-            <p>See a few of our most recent projects completed for our customers.</p>
+            <h3>Our Portfolio &rarr;</h3>
+            <p>See a few of our most recent projects.</p>
           </a>
-
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://kayladesign1.wixsite.com/kayladesign/contact"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <h3>Contact Us &rarr;</h3>
+            <p>We are happy to serve you.</p>
           </a>
         </div>
       </main>
@@ -125,6 +118,7 @@ export default function Home() {
         }
 
         .main-logo {
+          max-width: 90%;
           border-radius: 8px;
         }
 
@@ -168,7 +162,7 @@ export default function Home() {
         .card:focus,
         .card:active {
           color: #0070f3;
-          border-color: #0070f3;
+          border-color: #D62AD0;
         }
 
         .card h3 {
