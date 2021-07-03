@@ -1,39 +1,44 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>kayladesign</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          kayladesign
         </h1>
+        <p className="description">Because A Picture Is Worth A Thousand Words</p>
+        <img className="main-logo" src="/images/logo.png" />
 
-        <p className="description">
+        {/* <p className="description">
           Get started by editing <code>pages/index.js</code>
-        </p>
+        </p> */}
+        <p className="description">Contact us for your design and printing needs</p>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h3>Our Story &rarr;</h3>
+            <p>We are a family-owned and operated business. Learn more about us.</p>
+            {/* <p>Find in-depth information about Next.js features and API.</p> */}
           </a>
 
           <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h3>Services &rarr;</h3>
+            <p>Learn about what we can do for you.</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className="card"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>Portfolio &rarr;</h3>
+            <p>See a few of our most recent projects completed for our customers.</p>
           </a>
 
           <a
@@ -50,17 +55,17 @@ export default function Home() {
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="mailto:kayla@hey.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Made with ❤️ by Kayla R. Webb ©️ 2021
         </a>
       </footer>
 
       <style jsx>{`
         .container {
+          background-color: #E8F0F2;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
@@ -81,14 +86,9 @@ export default function Home() {
         footer {
           width: 100%;
           height: 100px;
-          border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
         }
 
         footer a {
@@ -122,6 +122,10 @@ export default function Home() {
         .title,
         .description {
           text-align: center;
+        }
+
+        .main-logo {
+          border-radius: 8px;
         }
 
         .description {
